@@ -9,6 +9,7 @@ import Home from './Home';
 import Tickets from './Tickets'
 import Contact from './Contact';
 import TicketPurchase from './TicketPurchase';
+import News from './News'
 
 
 const Stack = createStackNavigator();
@@ -41,17 +42,7 @@ const Stack = createStackNavigator();
                 headerTitleStyle: { fontFamily: 'Ubuntu-Regular' }
               }}
             />
-
-            <Stack.Screen 
-              name='Contact'
-              component={Contact}
-              option={{
-                headerTitleAlign: 'center',
-                headerTitleStyle: { fontFamily: 'Ubuntu-Regular' },
-                headerTitle: 'Contact Us'
-              }}
-            />
-
+            
             <Stack.Screen
               name='Purchase'
               component={TicketPurchase}
@@ -59,6 +50,16 @@ const Stack = createStackNavigator();
                 headerTitleAlign: 'center',
                 headerTitleStyle: { fontFamily: 'Ubuntu-Regular' },
                 headerTitle: 'Purchase Ticket'
+              }}
+            />
+
+            <Stack.Screen
+              name='News'
+              component={News}
+              option={{
+                headerTitleAlign: 'center',
+                headerTitleStyle: { fontFamily: 'Ubuntu-Regular' },
+                headerTitle: 'Latest News'
               }}
             />
           </Stack.Navigator>
