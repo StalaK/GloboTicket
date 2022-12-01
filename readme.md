@@ -24,3 +24,9 @@ const Contact = ({navigation}) => {
     ...
 }
 ```
+
+# API Requests
+In a functional component, use the useEffect React hook to fetch data during the componentDidMount lifecycle. The second param needs to be an empty array to stop multiple function calls/errors to occur. Need to investigate this in more detail
+```Example from News.js
+  useEffect(() => { getNews(); }, []);
+```
